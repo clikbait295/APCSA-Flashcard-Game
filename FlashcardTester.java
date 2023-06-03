@@ -24,6 +24,11 @@ public class FlashcardTester
 			}
 			else if (userIntent.equals("p"))
 			{
+				if (allCards.size() == 0)
+				{
+					System.out.println("No flashcard sets created yet. Please make at least one set to practice.");
+					continue;
+				}
 				//whatever
 				for (int i = 0; i < allCards.size(); i++)
 				{
